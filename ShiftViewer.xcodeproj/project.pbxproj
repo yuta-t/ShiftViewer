@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D201F11BB535DB00DE1161 /* AppDelegate.swift */; };
-		01D201F41BB535DB00DE1161 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D201F31BB535DB00DE1161 /* ViewController.swift */; };
 		01D201F71BB535DB00DE1161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F51BB535DB00DE1161 /* Main.storyboard */; };
 		01D201F91BB535DB00DE1161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F81BB535DB00DE1161 /* Assets.xcassets */; };
 		01D201FC1BB535DB00DE1161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D201FA1BB535DB00DE1161 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		01D201EE1BB535DB00DE1161 /* ShiftViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D201F11BB535DB00DE1161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01D201F31BB535DB00DE1161 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01D201F61BB535DB00DE1161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01D201F81BB535DB00DE1161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D201FB1BB535DB00DE1161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,12 +95,7 @@
 		01D201F01BB535DB00DE1161 /* ShiftViewer */ = {
 			isa = PBXGroup;
 			children = (
-				01D201F11BB535DB00DE1161 /* AppDelegate.swift */,
-				01D201F31BB535DB00DE1161 /* ViewController.swift */,
-				01D201F51BB535DB00DE1161 /* Main.storyboard */,
-				01D201F81BB535DB00DE1161 /* Assets.xcassets */,
-				01D201FA1BB535DB00DE1161 /* LaunchScreen.storyboard */,
-				01D201FD1BB535DB00DE1161 /* Info.plist */,
+				01D2021F1BB535E200DE1161 /* Application */,
 			);
 			path = ShiftViewer;
 			sourceTree = "<group>";
@@ -123,6 +116,18 @@
 				01D202131BB535DB00DE1161 /* Info.plist */,
 			);
 			path = ShiftViewerUITests;
+			sourceTree = "<group>";
+		};
+		01D2021F1BB535E200DE1161 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				01D201F51BB535DB00DE1161 /* Main.storyboard */,
+				01D201F81BB535DB00DE1161 /* Assets.xcassets */,
+				01D201F11BB535DB00DE1161 /* AppDelegate.swift */,
+				01D201FA1BB535DB00DE1161 /* LaunchScreen.storyboard */,
+				01D201FD1BB535DB00DE1161 /* Info.plist */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01D201F41BB535DB00DE1161 /* ViewController.swift in Sources */,
 				01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
