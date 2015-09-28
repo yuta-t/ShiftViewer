@@ -32,14 +32,16 @@ class ShiftListModel: NSObject, UITableViewDataSource {
         WebAPI.jsonObject(url) { (jsonObject) in
             if let terms = jsonObject {
                 for dic in terms as! [[String: AnyObject]] {
-                    
-                    let term = Term(dic: dic)
+                    let id = dic["id"] as! Int
+                    let groupId = dic["mentor_shift_group_id"] as! Int
+                    let startDate = dic["start_date"] as! String
+                    let finishDate = dic["finish_date"] as! String
+                    let term = Term(id: id, groupId: groupId, startDate: startDate, finishDate: finishDate)
                     self.terms.append(term)
                 }
                 completed()
             }
         }
     }
-    
     
 }
