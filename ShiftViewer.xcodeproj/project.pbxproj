@@ -13,6 +13,15 @@
 		01D201FC1BB535DB00DE1161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D201FA1BB535DB00DE1161 /* LaunchScreen.storyboard */; };
 		01D202071BB535DB00DE1161 /* ShiftViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D202061BB535DB00DE1161 /* ShiftViewerTests.swift */; };
 		01D202121BB535DB00DE1161 /* ShiftViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D202111BB535DB00DE1161 /* ShiftViewerUITests.swift */; };
+		01D202251BB59FEE00DE1161 /* ShiftListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D202241BB59FEE00DE1161 /* ShiftListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		01D202291BB5B44100DE1161 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D202271BB5B44100DE1161 /* Alamofire.framework */; };
+		01D2022A1BB5B44100DE1161 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D202281BB5B44100DE1161 /* SwiftyJSON.framework */; };
+		01D2022E1BB5CDFD00DE1161 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2022D1BB5CDFD00DE1161 /* Term.swift */; settings = {ASSET_TAGS = (); }; };
+		01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665851BB9350600D62044 /* NSDate+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665881BB9377900D62044 /* ShiftListModel.swift */; settings = {ASSET_TAGS = (); }; };
+		01F6658B1BB9524C00D62044 /* ShiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6658A1BB9524C00D62044 /* ShiftListView.swift */; settings = {ASSET_TAGS = (); }; };
+		01F6658F1BB954BE00D62044 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6658E1BB954BE00D62044 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
+		01F665931BB968ED00D62044 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665921BB968ED00D62044 /* WebAPI.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		01D2020D1BB535DB00DE1161 /* ShiftViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D202111BB535DB00DE1161 /* ShiftViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftViewerUITests.swift; sourceTree = "<group>"; };
 		01D202131BB535DB00DE1161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D202241BB59FEE00DE1161 /* ShiftListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListViewController.swift; sourceTree = "<group>"; };
+		01D202271BB5B44100DE1161 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		01D202281BB5B44100DE1161 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		01D2022D1BB5CDFD00DE1161 /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		01F665851BB9350600D62044 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		01F665881BB9377900D62044 /* ShiftListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListModel.swift; sourceTree = "<group>"; };
+		01F6658A1BB9524C00D62044 /* ShiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListView.swift; sourceTree = "<group>"; };
+		01F6658E1BB954BE00D62044 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		01F665921BB968ED00D62044 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D202291BB5B44100DE1161 /* Alamofire.framework in Frameworks */,
+				01D2022A1BB5B44100DE1161 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +99,7 @@
 				01D202051BB535DB00DE1161 /* ShiftViewerTests */,
 				01D202101BB535DB00DE1161 /* ShiftViewerUITests */,
 				01D201EF1BB535DB00DE1161 /* Products */,
+				01D2022C1BB5B68800DE1161 /* Carthage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +116,9 @@
 		01D201F01BB535DB00DE1161 /* ShiftViewer */ = {
 			isa = PBXGroup;
 			children = (
+				01F6658C1BB9541B00D62044 /* Scenes */,
+				01D202261BB5A0A500DE1161 /* Models */,
+				01F665871BB9350F00D62044 /* Extensions */,
 				01D2021F1BB535E200DE1161 /* Application */,
 			);
 			path = ShiftViewer;
@@ -130,6 +154,75 @@
 			name = Application;
 			sourceTree = "<group>";
 		};
+		01D202201BB59FA800DE1161 /* ShiftList */ = {
+			isa = PBXGroup;
+			children = (
+				01D202241BB59FEE00DE1161 /* ShiftListViewController.swift */,
+				01F6658A1BB9524C00D62044 /* ShiftListView.swift */,
+				01F665881BB9377900D62044 /* ShiftListModel.swift */,
+			);
+			name = ShiftList;
+			sourceTree = "<group>";
+		};
+		01D202211BB59FB500DE1161 /* Shift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Shift;
+			sourceTree = "<group>";
+		};
+		01D202221BB59FBB00DE1161 /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UserSetting;
+			sourceTree = "<group>";
+		};
+		01D202261BB5A0A500DE1161 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01D2022D1BB5CDFD00DE1161 /* Term.swift */,
+				01F665921BB968ED00D62044 /* WebAPI.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		01D2022C1BB5B68800DE1161 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				01D202271BB5B44100DE1161 /* Alamofire.framework */,
+				01D202281BB5B44100DE1161 /* SwiftyJSON.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
+		01F665871BB9350F00D62044 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01F665851BB9350600D62044 /* NSDate+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		01F6658C1BB9541B00D62044 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				01F6658D1BB9544900D62044 /* Navigation */,
+				01D202201BB59FA800DE1161 /* ShiftList */,
+				01D202211BB59FB500DE1161 /* Shift */,
+				01D202221BB59FBB00DE1161 /* UserSetting */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		01F6658D1BB9544900D62044 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				01F6658E1BB954BE00D62044 /* NavigationController.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +233,7 @@
 				01D201EA1BB535DB00DE1161 /* Sources */,
 				01D201EB1BB535DB00DE1161 /* Frameworks */,
 				01D201EC1BB535DB00DE1161 /* Resources */,
+				01D2022B1BB5B53B00DE1161 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,12 +352,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01D2022B1BB5B53B00DE1161 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01D201EA1BB535DB00DE1161 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */,
+				01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */,
 				01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */,
+				01D202251BB59FEE00DE1161 /* ShiftListViewController.swift in Sources */,
+				01D2022E1BB5CDFD00DE1161 /* Term.swift in Sources */,
+				01F6658F1BB954BE00D62044 /* NavigationController.swift in Sources */,
+				01F6658B1BB9524C00D62044 /* ShiftListView.swift in Sources */,
+				01F665931BB968ED00D62044 /* WebAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +524,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShiftViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.yuta-t.ShiftViewer";
@@ -416,6 +539,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ShiftViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.yuta-t.ShiftViewer";
@@ -490,6 +617,7 @@
 				01D202181BB535DB00DE1161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01D202191BB535DB00DE1161 /* Build configuration list for PBXNativeTarget "ShiftViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +626,7 @@
 				01D2021B1BB535DB00DE1161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01D2021C1BB535DB00DE1161 /* Build configuration list for PBXNativeTarget "ShiftViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +635,7 @@
 				01D2021E1BB535DB00DE1161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
