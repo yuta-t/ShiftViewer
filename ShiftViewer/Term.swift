@@ -27,19 +27,12 @@ struct Term {
     
     init(dic: [String: AnyObject]) {
         self.id = dic["id"] as! Int
-        self.group =  Group(rawValue: (dic["mentor_shift_group_id"] as! Int))!
+        self.group = Group(rawValue: (dic["mentor_shift_group_id"] as! Int))!
     
-        let startDate = NSDate.convertFromHyphenSeparatedDate(dic["start_date"] as! String)
+        let startDate = NSDate.convertFromHyphenSeparatedDate(dic["start_date"] as! String)!
         self.startDate = startDate.convertToSlashSeparatedDate()
 
-        let finishDate =  NSDate.convertFromHyphenSeparatedDate(dic["finish_date"] as! String)
+        let finishDate =  NSDate.convertFromHyphenSeparatedDate(dic["finish_date"] as! String)!
         self.finishDate = finishDate.convertToSlashSeparatedDate()
-    }
-    
-    init(id: Int, groupId: Int, startDate: String, finishDate: String) {
-        self.id = id
-        self.group = Group(rawValue: groupId)!
-        self.startDate = NSDate.convertFromHyphenSeparatedDate(startDate).convertToSlashSeparatedDate()
-        self.finishDate = NSDate.convertFromHyphenSeparatedDate(finishDate).convertToSlashSeparatedDate()
     }
 }
