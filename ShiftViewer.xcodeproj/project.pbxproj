@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0146FB301BBAA86A00514D80 /* ShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB2F1BBAA86A00514D80 /* ShiftViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D201F11BB535DB00DE1161 /* AppDelegate.swift */; };
 		01D201F71BB535DB00DE1161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F51BB535DB00DE1161 /* Main.storyboard */; };
 		01D201F91BB535DB00DE1161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F81BB535DB00DE1161 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0146FB2F1BBAA86A00514D80 /* ShiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftViewController.swift; sourceTree = "<group>"; };
+		0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		01D201EE1BB535DB00DE1161 /* ShiftViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D201F11BB535DB00DE1161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D201F61BB535DB00DE1161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		01D202211BB59FB500DE1161 /* Shift */ = {
 			isa = PBXGroup;
 			children = (
+				0146FB2F1BBAA86A00514D80 /* ShiftViewController.swift */,
 			);
 			name = Shift;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 		01D202221BB59FBB00DE1161 /* UserSetting */ = {
 			isa = PBXGroup;
 			children = (
+				0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */,
 			);
 			name = UserSetting;
 			sourceTree = "<group>";
@@ -375,9 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */,
 				01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */,
 				01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */,
 				01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */,
+				0146FB301BBAA86A00514D80 /* ShiftViewController.swift in Sources */,
 				01D202251BB59FEE00DE1161 /* ShiftListViewController.swift in Sources */,
 				01D2022E1BB5CDFD00DE1161 /* Term.swift in Sources */,
 				01F6658F1BB954BE00D62044 /* NavigationController.swift in Sources */,
