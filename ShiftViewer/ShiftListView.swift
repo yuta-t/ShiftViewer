@@ -9,11 +9,9 @@
 import UIKit
 
 class ShiftListView: UIView {
-    // Properties
     let table: UITableView
     
     
-    // Initializers
     required init() {
         table = UITableView(frame: CGRectZero, style: .Plain)
         
@@ -25,7 +23,7 @@ class ShiftListView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // Layout Methods
+
     override func layoutSubviews() {
         super.layoutSubviews()
         backgroundColor = UIColor.whiteColor()
