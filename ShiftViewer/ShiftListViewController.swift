@@ -37,7 +37,7 @@ class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListM
     }
 
     func transitToUserSetting(sender: UIBarButtonItem) {
-        performSegueWithIdentifier("ShowUserSetting", sender: sender)
+        performSegueWithIdentifier("ShowUserSetting", sender: self)
     }
     
     func showErrorAlert(message: String) {
