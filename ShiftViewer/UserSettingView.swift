@@ -11,7 +11,16 @@ import UIKit
 class UserSettingView: UIView {
 
     required init() {
+        let familyNameTextField = UITextField(frame: CGRectZero)
+        let firstNameTextField = UITextField(frame: CGRectZero)
+        let clearButton = UIButton(frame: CGRectZero)
+        let submitButton = UIButton(frame: CGRectZero)
+        
         super.init(frame: CGRectZero)
+        addSubview(familyNameTextField)
+        addSubview(firstNameTextField)
+        addSubview(clearButton)
+        addSubview(submitButton)
     }
 
     required init?(coder aDecoder: NSCoder) {
