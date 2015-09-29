@@ -24,8 +24,8 @@ enum GettingTermError: ErrorType {
 }
 
 class ShiftListModel: NSObject, UITableViewDataSource {
-    weak var delegate: ShiftListModelDelegate?
     var terms = [Term]()
+    weak var delegate: ShiftListModelDelegate?
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return terms.count
