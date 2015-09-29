@@ -10,6 +10,10 @@ import UIKit
 
 class UserSettingViewController: UIViewController {
 
+    override func loadView() {
+        view = UserSettingView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
