@@ -11,11 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 class WebAPI {
-    class func jsonObject(url: String, completed: ((AnyObject?) -> Void)) {
+    class func jsonObject(url: String, completed: (AnyObject?) -> Void) {
         Alamofire.request(.GET, url)
-            .authenticate(user: "tcamp", password: "master")
-            .responseJSON { (_, _, result) in
-                completed(result.value)
+        .authenticate(user: "tcamp", password: "master")
+        .responseJSON { (_, _, result) in
+            completed(result.value)
         }
     }
 }
+
