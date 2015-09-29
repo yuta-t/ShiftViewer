@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShiftListViewController: UIViewController, UITableViewDelegate {
+class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListModelDelegate {
     private let model = ShiftListModel()
     
     override func loadView() {
@@ -19,6 +19,7 @@ class ShiftListViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         let shiftView = view as! ShiftListView
         
+        model.delegate = self
         shiftView.table.delegate = self
         shiftView.table.dataSource = model
         
@@ -35,6 +36,12 @@ class ShiftListViewController: UIViewController, UITableViewDelegate {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
     }
 
+    func showErrorAlert(message: String) {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .Alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertController.addAction(defaultAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
     
     
     override func didReceiveMemoryWarning() {
