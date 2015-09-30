@@ -9,22 +9,13 @@
 import UIKit
 
 class UserSettingView: UIView {
-    let familyNameTextField: UITextField
-    let firstNameTextField: UITextField
-    let clearButton: UIButton
-    let submitButton: UIButton
+    var xibView: UIView
     
     required init() {
-        familyNameTextField = UITextField(frame: CGRectZero)
-        firstNameTextField = UITextField(frame: CGRectZero)
-        clearButton = UIButton(frame: CGRectZero)
-        submitButton = UIButton(frame: CGRectZero)
+        xibView = UINib(nibName: "UserSettingView", bundle: nil).instantiateWithOwner(nil, options: nil).first as! UIView
         
         super.init(frame: CGRectZero)
-        addSubview(familyNameTextField)
-        addSubview(firstNameTextField)
-        addSubview(clearButton)
-        addSubview(submitButton)
+        addSubview(xibView)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -34,7 +25,6 @@ class UserSettingView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         backgroundColor = UIColor.whiteColor()
-        
     }
     
 }
