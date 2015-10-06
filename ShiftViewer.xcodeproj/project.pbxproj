@@ -12,6 +12,7 @@
 		0146FB341BBAAD4600514D80 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB331BBAAD4600514D80 /* UserSettingView.swift */; settings = {ASSET_TAGS = (); }; };
 		0191A8C51BBB975A009D8AFE /* UserSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0191A8C41BBB975A009D8AFE /* UserSettingView.xib */; settings = {ASSET_TAGS = (); }; };
 		0191A8C71BBB9799009D8AFE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191A8C61BBB9799009D8AFE /* UIColor+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		0191A8CB1BBBA7B5009D8AFE /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191A8CA1BBBA7B5009D8AFE /* NameTextField.swift */; settings = {ASSET_TAGS = (); }; };
 		01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D201F11BB535DB00DE1161 /* AppDelegate.swift */; };
 		01D201F71BB535DB00DE1161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F51BB535DB00DE1161 /* Main.storyboard */; };
 		01D201F91BB535DB00DE1161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F81BB535DB00DE1161 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		0146FB331BBAAD4600514D80 /* UserSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingView.swift; sourceTree = "<group>"; };
 		0191A8C41BBB975A009D8AFE /* UserSettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingView.xib; sourceTree = "<group>"; };
 		0191A8C61BBB9799009D8AFE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0191A8CA1BBBA7B5009D8AFE /* NameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
 		01D201EE1BB535DB00DE1161 /* ShiftViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D201F11BB535DB00DE1161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D201F61BB535DB00DE1161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */,
 				0146FB331BBAAD4600514D80 /* UserSettingView.swift */,
 				0191A8C41BBB975A009D8AFE /* UserSettingView.xib */,
+				0191A8CA1BBBA7B5009D8AFE /* NameTextField.swift */,
 			);
 			name = UserSetting;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */,
+				0191A8CB1BBBA7B5009D8AFE /* NameTextField.swift in Sources */,
 				01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */,
 				0146FB341BBAAD4600514D80 /* UserSettingView.swift in Sources */,
 				0191A8C71BBB9799009D8AFE /* UIColor+Extension.swift in Sources */,
