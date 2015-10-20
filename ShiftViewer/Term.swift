@@ -35,4 +35,11 @@ struct Term {
         let finishDate =  NSDate.convertFromHyphenSeparatedDate(dic["finish_date"] as! String)!
         self.finishDate = finishDate.convertToSlashSeparatedDate()
     }
+    
+    init(id: Int, groupId: Int, start: String, finish: String) {
+        self.id = id
+        self.group = Group.init(rawValue: groupId)!
+        startDate = NSDate.convert(start)
+        finishDate = NSDate.convert(finish)
+    }
 }
