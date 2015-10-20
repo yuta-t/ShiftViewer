@@ -9,6 +9,10 @@
 import Foundation
 
 extension NSDate {
+    class func convert(string: String) -> String{
+        return NSDate.convertFromHyphenSeparatedDate(string)!.convertToSlashSeparatedDate()
+    }
+    
     class func convertFromHyphenSeparatedDate(string: String) -> NSDate? {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
