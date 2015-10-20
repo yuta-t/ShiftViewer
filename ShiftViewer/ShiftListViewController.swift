@@ -12,6 +12,7 @@ class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListM
     private let model = ShiftListModel()
     
     override func loadView() {
+        super.loadView()
         view = ShiftListView()
     }
     

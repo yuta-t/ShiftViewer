@@ -26,8 +26,6 @@ class ShiftListView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        backgroundColor = UIColor.whiteColor()
-        
         table.frame = frame
     }
 }
