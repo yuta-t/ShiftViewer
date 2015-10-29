@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0146FB301BBAA86A00514D80 /* ShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB2F1BBAA86A00514D80 /* ShiftViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		0146FB341BBAAD4600514D80 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB331BBAAD4600514D80 /* UserSettingView.swift */; settings = {ASSET_TAGS = (); }; };
-		0191A8C51BBB975A009D8AFE /* UserSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0191A8C41BBB975A009D8AFE /* UserSettingView.xib */; settings = {ASSET_TAGS = (); }; };
-		0191A8C71BBB9799009D8AFE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191A8C61BBB9799009D8AFE /* UIColor+Extension.swift */; settings = {ASSET_TAGS = (); }; };
-		0191A8CB1BBBA7B5009D8AFE /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191A8CA1BBBA7B5009D8AFE /* NameTextField.swift */; settings = {ASSET_TAGS = (); }; };
+		0146FB301BBAA86A00514D80 /* ShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB2F1BBAA86A00514D80 /* ShiftViewController.swift */; };
+		0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */; };
+		0146FB341BBAAD4600514D80 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB331BBAAD4600514D80 /* UserSettingView.swift */; };
+		0191A8C51BBB975A009D8AFE /* UserSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0191A8C41BBB975A009D8AFE /* UserSettingView.xib */; };
+		0191A8C71BBB9799009D8AFE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191A8C61BBB9799009D8AFE /* UIColor+Extension.swift */; };
 		01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D201F11BB535DB00DE1161 /* AppDelegate.swift */; };
 		01D201F71BB535DB00DE1161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F51BB535DB00DE1161 /* Main.storyboard */; };
 		01D201F91BB535DB00DE1161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D201F81BB535DB00DE1161 /* Assets.xcassets */; };
 		01D201FC1BB535DB00DE1161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D201FA1BB535DB00DE1161 /* LaunchScreen.storyboard */; };
 		01D202071BB535DB00DE1161 /* ShiftViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D202061BB535DB00DE1161 /* ShiftViewerTests.swift */; };
 		01D202121BB535DB00DE1161 /* ShiftViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D202111BB535DB00DE1161 /* ShiftViewerUITests.swift */; };
-		01D202251BB59FEE00DE1161 /* ShiftListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D202241BB59FEE00DE1161 /* ShiftListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		01D202251BB59FEE00DE1161 /* ShiftListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D202241BB59FEE00DE1161 /* ShiftListViewController.swift */; };
 		01D202291BB5B44100DE1161 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D202271BB5B44100DE1161 /* Alamofire.framework */; };
 		01D2022A1BB5B44100DE1161 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D202281BB5B44100DE1161 /* SwiftyJSON.framework */; };
-		01D2022E1BB5CDFD00DE1161 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2022D1BB5CDFD00DE1161 /* Term.swift */; settings = {ASSET_TAGS = (); }; };
-		01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665851BB9350600D62044 /* NSDate+Extension.swift */; settings = {ASSET_TAGS = (); }; };
-		01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665881BB9377900D62044 /* ShiftListModel.swift */; settings = {ASSET_TAGS = (); }; };
-		01F6658B1BB9524C00D62044 /* ShiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6658A1BB9524C00D62044 /* ShiftListView.swift */; settings = {ASSET_TAGS = (); }; };
-		01F6658F1BB954BE00D62044 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6658E1BB954BE00D62044 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
-		01F665931BB968ED00D62044 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665921BB968ED00D62044 /* WebAPI.swift */; settings = {ASSET_TAGS = (); }; };
+		01D2022E1BB5CDFD00DE1161 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2022D1BB5CDFD00DE1161 /* Term.swift */; };
+		01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665851BB9350600D62044 /* NSDate+Extension.swift */; };
+		01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665881BB9377900D62044 /* ShiftListModel.swift */; };
+		01F6658B1BB9524C00D62044 /* ShiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6658A1BB9524C00D62044 /* ShiftListView.swift */; };
+		01F6658F1BB954BE00D62044 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6658E1BB954BE00D62044 /* NavigationController.swift */; };
+		01F665931BB968ED00D62044 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665921BB968ED00D62044 /* WebAPI.swift */; };
+		01FD48A71BC3E39900D1984A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD48A61BC3E39900D1984A /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		0146FB331BBAAD4600514D80 /* UserSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingView.swift; sourceTree = "<group>"; };
 		0191A8C41BBB975A009D8AFE /* UserSettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingView.xib; sourceTree = "<group>"; };
 		0191A8C61BBB9799009D8AFE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		0191A8CA1BBBA7B5009D8AFE /* NameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
 		01D201EE1BB535DB00DE1161 /* ShiftViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D201F11BB535DB00DE1161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D201F61BB535DB00DE1161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		01F6658A1BB9524C00D62044 /* ShiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListView.swift; sourceTree = "<group>"; };
 		01F6658E1BB954BE00D62044 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		01F665921BB968ED00D62044 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		01FD48A61BC3E39900D1984A /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,6 @@
 				0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */,
 				0146FB331BBAAD4600514D80 /* UserSettingView.swift */,
 				0191A8C41BBB975A009D8AFE /* UserSettingView.xib */,
-				0191A8CA1BBBA7B5009D8AFE /* NameTextField.swift */,
 			);
 			name = UserSetting;
 			sourceTree = "<group>";
@@ -200,6 +199,7 @@
 			children = (
 				01D2022D1BB5CDFD00DE1161 /* Term.swift */,
 				01F665921BB968ED00D62044 /* WebAPI.swift */,
+				01FD48A61BC3E39900D1984A /* Result.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -395,9 +395,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */,
-				0191A8CB1BBBA7B5009D8AFE /* NameTextField.swift in Sources */,
 				01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */,
 				0146FB341BBAAD4600514D80 /* UserSettingView.swift in Sources */,
+				01FD48A71BC3E39900D1984A /* Result.swift in Sources */,
 				0191A8C71BBB9799009D8AFE /* UIColor+Extension.swift in Sources */,
 				01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */,
 				01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */,
