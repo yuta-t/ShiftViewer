@@ -7,20 +7,10 @@
 //
 
 import UIKit
-import Alamofire
 import SwiftyJSON
 
 protocol ShiftListModelDelegate: class {
     func showErrorAlert(message: String)
-}
-
-enum GettingTermError: ErrorType {
-    case InvalidJsonObject
-    case CouldntCastToJsonObject
-    case UnknownKey(key: String)
-    case CouldntCastToTermAttribute(key: String)
-    case UnknownGroupID
-    case CouldntConvertToNSDate(key: String)
 }
 
 class ShiftListModel: NSObject, UITableViewDataSource {
@@ -43,74 +33,33 @@ class ShiftListModel: NSObject, UITableViewDataSource {
     
     
     func getTerms(completed: () -> Void) {
+        self.terms = []
+        
         let url = "http://localhost:3000/api/mentor_shifts/mentor_shift_terms"
-        WebAPI.jsonObject(url) { (jsonObject) in
-            defer { completed() }
+        WebAPI.jsonObject(url) { (result) in
+            guard let jsonTerms = result else {
+                self.delegate?.showErrorAlert("Could not connect to server")
+                return
+            }
             
-            do {
-                try self.validateGettingTerm(jsonObject)
-
-                for dic in jsonObject as! [[String: AnyObject]] {
-                    self.terms.append(Term(dic: dic))
+            for jsonTerm in JSON(jsonTerms) {
+                do {
+                    let term = try Term.from(jsonTerm.1)
+                    self.terms.append(term)
+                    completed()
+                    
+                } catch Term.InitError.Unparsable(let string) {
+                    self.delegate?.showErrorAlert("Could not parse \(string)")
+                } catch Term.InitError.UnknownGroup {
+                    self.delegate?.showErrorAlert("Unknown group")
+                } catch Term.InitError.Unconvertable(let string) {
+                    self.delegate?.showErrorAlert("Could not convert \(string)")
+                } catch {
+                    self.delegate?.showErrorAlert("Unknown error")
                 }
-                
-            } catch GettingTermError.InvalidJsonObject {
-                self.delegate?.showErrorAlert("Invalid JSON object")
-            } catch GettingTermError.CouldntCastToJsonObject {
-                self.delegate?.showErrorAlert("Couldn't cast to JSON object")
-            } catch GettingTermError.UnknownKey(let key) {
-                self.delegate?.showErrorAlert("Unknown key '\(key)'")
-            } catch GettingTermError.CouldntCastToTermAttribute(let key) {
-                self.delegate?.showErrorAlert("Couldn't cast to term attribute '\(key)'")
-            } catch GettingTermError.UnknownGroupID {
-                self.delegate?.showErrorAlert("Unknown group id")
-            } catch GettingTermError.CouldntConvertToNSDate(let key) {
-                self.delegate?.showErrorAlert("Couldn't convert to NSDate '\(key)'")
-            } catch {
-                self.delegate?.showErrorAlert("Unknown error")
             }
+            
         }
     }
-    
-    func validateGettingTerm(jsonObject: AnyObject?) throws {
-        guard let json = jsonObject else {
-            throw GettingTermError.InvalidJsonObject
-        }
-        
-        guard let terms = json as? [[String: AnyObject]] else {
-            throw GettingTermError.CouldntCastToJsonObject
-        }
-        
-        for dic in terms {
-            let keys = [["id", "mentor_shift_group_id"], ["start_date", "finish_date"]]
-            for key in keys.flatten() {
-                guard let value = dic[key] else {
-                    throw GettingTermError.UnknownKey(key: key)
-                }
-                
-                if keys[0].contains(key) {
-                    guard let intValue = value as? Int else {
-                        throw GettingTermError.CouldntCastToTermAttribute(key: key)
-                    }
-                    
-                    if key == "mentor_shift_group_id" {
-                        guard let _ = Term.Group(rawValue: intValue) else {
-                            throw GettingTermError.UnknownGroupID
-                        }
-                    }
-                } else {
-                    guard let strValue = value as? String else {
-                        throw GettingTermError.CouldntCastToTermAttribute(key: key)
-                    }
-                    
-                    guard let _ = NSDate.convertFromHyphenSeparatedDate(strValue) else {
-                        throw GettingTermError.CouldntConvertToNSDate(key: key)
-                    }
-                }
-                
-            }
-        }
-    }
-    
 }
 
