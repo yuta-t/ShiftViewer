@@ -9,18 +9,6 @@
 import UIKit
 
 class UserSettingView: UIView {
-    var xibView: UIView
-    
-    required init() {
-        xibView = UINib(nibName: "UserSettingView", bundle: nil).instantiateWithOwner(nil, options: nil).first as! UIView
-        
-        super.init(frame: CGRectZero)
-        addSubview(xibView)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func layoutSubviews() {
         super.layoutSubviews()
