@@ -23,6 +23,15 @@ class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListM
         model.delegate = self
         shiftView.table.delegate = self
         shiftView.table.dataSource = model
+
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let shiftView = view as! ShiftListView
+        
+        title = "シフト一覧"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
         
         model.getTerms {
             dispatch_async(dispatch_get_main_queue(), {
@@ -31,11 +40,6 @@ class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListM
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        title = "シフト一覧"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
-    }
 
     func transitToUserSetting(sender: UIBarButtonItem) {
         performSegueWithIdentifier("ShowUserSetting", sender: self)
@@ -47,6 +51,7 @@ class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListM
         alertController.addAction(defaultAction)
         presentViewController(alertController, animated: true, completion: nil)
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
