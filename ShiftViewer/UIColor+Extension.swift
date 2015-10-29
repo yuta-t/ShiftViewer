@@ -6,7 +6,6 @@
 //  Copyright © 2015年 yuta-t. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension UIColor {
