@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
 
 class WebAPI {
     class func jsonObject(url: String, completed: (AnyObject?) -> Void) {
