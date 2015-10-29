@@ -11,7 +11,8 @@ import UIKit
 class UserSettingViewController: UIViewController {
 
     override func loadView() {
-        view = UserSettingView()
+        let nib = UINib(nibName: "UserSettingView", bundle: nil)
+        view = nib.instantiateWithOwner(nil, options: nil).first as! UIView
     }
     
     override func viewDidLoad() {
