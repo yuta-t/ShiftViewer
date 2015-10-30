@@ -40,7 +40,7 @@ struct Term {
         finishDate = finish
     }
     
-    static func from(json: JSON) throws -> Term {
+    init(json: JSON) throws {
         guard let id = json["id"].int else {
             throw InitError.Unparsable("id")
         }
@@ -69,6 +69,7 @@ struct Term {
             throw InitError.Unconvertable("finish date")
         }
         
-        return self.init(id: id, group: group, start: start, finish: finish)
+        self.init(id: id, group: group, start: start, finish: finish)
     }
+    
 }

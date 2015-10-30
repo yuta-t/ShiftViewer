@@ -44,7 +44,7 @@ class ShiftListModel: NSObject, UITableViewDataSource {
             
             for jsonTerm in JSON(jsonTerms) {
                 do {
-                    let term = try Term.from(jsonTerm.1)
+                    let term = try Term(json: jsonTerm.1)
                     self.terms.append(term)
                     completed()
                     
