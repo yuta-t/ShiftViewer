@@ -9,8 +9,42 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserSettingView" customModule="ShiftViewer" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCg-x5-FLW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="7sV-zW-nk3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dj-I0-b1s">
+                    <rect key="frame" x="60" y="266" width="200" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="SEND"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B29-Ch-Yvi">
+                    <rect key="frame" x="60" y="126" width="200" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ue-UF-xX0">
+                    <rect key="frame" x="60" y="185" width="200" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pCg-x5-FLW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3bY-qe-dkQ"/>
+                <constraint firstItem="pCg-x5-FLW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fsg-fU-v2n"/>
+                <constraint firstAttribute="trailing" secondItem="pCg-x5-FLW" secondAttribute="trailing" id="ruq-xo-F6q"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="familyNameTextField" destination="B29-Ch-Yvi" id="aXc-jy-fRp"/>
+                <outlet property="firstNameTextField" destination="1ue-UF-xX0" id="vUu-Yv-4Wo"/>
+                <outlet property="sendButton" destination="6dj-I0-b1s" id="meY-vE-hFc"/>
+            </connections>
         </view>
     </objects>
 </document>
