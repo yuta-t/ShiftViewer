@@ -13,7 +13,13 @@ extension UIColor {
         return UIColor(red: 202 / 255, green: 73 / 255, blue: 60 / 255, alpha: 1)
     }
     
+    class func corporateGray() -> UIColor {
+        return UIColor(white: 31 / 255, alpha: 1)
+    }
+    
     class func corporateWhite() -> UIColor {
         return UIColor(white: 239 / 255, alpha: 1)
     }
+    
+    
 }
