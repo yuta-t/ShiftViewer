@@ -8,9 +8,8 @@
 
 import UIKit
 
-class ShiftListView: UIView {
+final class ShiftListView: UIView {
     let table: UITableView
-    
     
     required init() {
         table = UITableView(frame: CGRectZero, style: .Plain)

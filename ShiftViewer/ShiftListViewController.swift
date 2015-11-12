@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListModelDelegate {
+final class ShiftListViewController: UIViewController, UITableViewDelegate, ShiftListModelDelegate {
     private let model = ShiftListModel()
     
     override func loadView() {

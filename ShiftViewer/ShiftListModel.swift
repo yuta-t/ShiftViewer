@@ -13,7 +13,7 @@ protocol ShiftListModelDelegate: class {
     func showErrorAlert(message: String)
 }
 
-class ShiftListModel: NSObject, UITableViewDataSource {
+final class ShiftListModel: NSObject, UITableViewDataSource {
     var terms = [Term]()
     weak var delegate: ShiftListModelDelegate?
     
