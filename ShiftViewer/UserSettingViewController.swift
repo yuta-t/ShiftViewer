@@ -8,8 +8,9 @@
 
 import UIKit
 
-class UserSettingViewController: UIViewController {
-
+final class UserSettingViewController: UIViewController {
+    private let model = UserSettingModel()
+    
     override func loadView() {
         let nib = UINib(nibName: "UserSettingView", bundle: nil)
         view = nib.instantiateWithOwner(nil, options: nil).first as! UIView
@@ -17,10 +18,19 @@ class UserSettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "ユーザー設定"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "戻る", style: .Plain, target: self, action: "backToShiftList:")
     }
 
+    
+    func backToShiftList(sender: UIBarButtonItem) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
+
