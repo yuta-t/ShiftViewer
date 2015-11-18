@@ -10,6 +10,9 @@
 		0146FB301BBAA86A00514D80 /* ShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB2F1BBAA86A00514D80 /* ShiftViewController.swift */; };
 		0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */; };
 		0146FB341BBAAD4600514D80 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146FB331BBAAD4600514D80 /* UserSettingView.swift */; };
+		0171AC681BFC4EED002912A5 /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171AC671BFC4EED002912A5 /* SendButton.swift */; };
+		0171AC6A1BFC4F1F002912A5 /* TextFieldContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171AC691BFC4F1F002912A5 /* TextFieldContainer.swift */; };
+		0171AC6C1BFC4F59002912A5 /* NameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171AC6B1BFC4F59002912A5 /* NameTextField.swift */; };
 		0191A8C51BBB975A009D8AFE /* UserSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0191A8C41BBB975A009D8AFE /* UserSettingView.xib */; };
 		0191A8C71BBB9799009D8AFE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191A8C61BBB9799009D8AFE /* UIColor+Extension.swift */; };
 		01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D201F11BB535DB00DE1161 /* AppDelegate.swift */; };
@@ -22,6 +25,7 @@
 		01D202291BB5B44100DE1161 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D202271BB5B44100DE1161 /* Alamofire.framework */; };
 		01D2022A1BB5B44100DE1161 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D202281BB5B44100DE1161 /* SwiftyJSON.framework */; };
 		01D2022E1BB5CDFD00DE1161 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2022D1BB5CDFD00DE1161 /* Term.swift */; };
+		01E458EB1BFC8308005E4F0B /* UserSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E458EA1BFC8308005E4F0B /* UserSettingModel.swift */; };
 		01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665851BB9350600D62044 /* NSDate+Extension.swift */; };
 		01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F665881BB9377900D62044 /* ShiftListModel.swift */; };
 		01F6658B1BB9524C00D62044 /* ShiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6658A1BB9524C00D62044 /* ShiftListView.swift */; };
@@ -50,6 +54,9 @@
 		0146FB2F1BBAA86A00514D80 /* ShiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftViewController.swift; sourceTree = "<group>"; };
 		0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		0146FB331BBAAD4600514D80 /* UserSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingView.swift; sourceTree = "<group>"; };
+		0171AC671BFC4EED002912A5 /* SendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		0171AC691BFC4F1F002912A5 /* TextFieldContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldContainer.swift; sourceTree = "<group>"; };
+		0171AC6B1BFC4F59002912A5 /* NameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTextField.swift; sourceTree = "<group>"; };
 		0191A8C41BBB975A009D8AFE /* UserSettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSettingView.xib; sourceTree = "<group>"; };
 		0191A8C61BBB9799009D8AFE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		01D201EE1BB535DB00DE1161 /* ShiftViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +75,7 @@
 		01D202271BB5B44100DE1161 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		01D202281BB5B44100DE1161 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		01D2022D1BB5CDFD00DE1161 /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		01E458EA1BFC8308005E4F0B /* UserSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingModel.swift; sourceTree = "<group>"; };
 		01F665851BB9350600D62044 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		01F665881BB9377900D62044 /* ShiftListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListModel.swift; sourceTree = "<group>"; };
 		01F6658A1BB9524C00D62044 /* ShiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListView.swift; sourceTree = "<group>"; };
@@ -168,8 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				01D202241BB59FEE00DE1161 /* ShiftListViewController.swift */,
-				01F6658A1BB9524C00D62044 /* ShiftListView.swift */,
 				01F665881BB9377900D62044 /* ShiftListModel.swift */,
+				01F6658A1BB9524C00D62044 /* ShiftListView.swift */,
 			);
 			name = ShiftList;
 			sourceTree = "<group>";
@@ -186,8 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				0146FB311BBAA88B00514D80 /* UserSettingViewController.swift */,
-				0146FB331BBAAD4600514D80 /* UserSettingView.swift */,
-				0191A8C41BBB975A009D8AFE /* UserSettingView.xib */,
+				01E458EA1BFC8308005E4F0B /* UserSettingModel.swift */,
+				01E458EC1BFC85D6005E4F0B /* Views */,
 			);
 			name = UserSetting;
 			sourceTree = "<group>";
@@ -208,6 +216,18 @@
 				01D202281BB5B44100DE1161 /* SwiftyJSON.framework */,
 			);
 			name = Carthage;
+			sourceTree = "<group>";
+		};
+		01E458EC1BFC85D6005E4F0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0146FB331BBAAD4600514D80 /* UserSettingView.swift */,
+				0191A8C41BBB975A009D8AFE /* UserSettingView.xib */,
+				0171AC671BFC4EED002912A5 /* SendButton.swift */,
+				0171AC691BFC4F1F002912A5 /* TextFieldContainer.swift */,
+				0171AC6B1BFC4F59002912A5 /* NameTextField.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		01F665871BB9350F00D62044 /* Extensions */ = {
@@ -394,15 +414,19 @@
 				0146FB321BBAA88B00514D80 /* UserSettingViewController.swift in Sources */,
 				01F665891BB9377900D62044 /* ShiftListModel.swift in Sources */,
 				0146FB341BBAAD4600514D80 /* UserSettingView.swift in Sources */,
+				0171AC6C1BFC4F59002912A5 /* NameTextField.swift in Sources */,
 				0191A8C71BBB9799009D8AFE /* UIColor+Extension.swift in Sources */,
 				01F665861BB9350600D62044 /* NSDate+Extension.swift in Sources */,
 				01D201F21BB535DB00DE1161 /* AppDelegate.swift in Sources */,
 				0146FB301BBAA86A00514D80 /* ShiftViewController.swift in Sources */,
+				0171AC6A1BFC4F1F002912A5 /* TextFieldContainer.swift in Sources */,
 				01D202251BB59FEE00DE1161 /* ShiftListViewController.swift in Sources */,
 				01D2022E1BB5CDFD00DE1161 /* Term.swift in Sources */,
 				01F6658F1BB954BE00D62044 /* NavigationController.swift in Sources */,
 				01F6658B1BB9524C00D62044 /* ShiftListView.swift in Sources */,
 				01F665931BB968ED00D62044 /* WebAPI.swift in Sources */,
+				0171AC681BFC4EED002912A5 /* SendButton.swift in Sources */,
+				01E458EB1BFC8308005E4F0B /* UserSettingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
