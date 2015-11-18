@@ -23,15 +23,16 @@ final class ShiftListViewController: UIViewController, UITableViewDelegate, Shif
         model.delegate = self
         shiftView.table.delegate = self
         shiftView.table.dataSource = model
-
+        
+        title = "シフト一覧"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         let shiftView = view as! ShiftListView
         
-        title = "シフト一覧"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
         
         model.getTerms {
             dispatch_async(dispatch_get_main_queue(), {
@@ -40,16 +41,17 @@ final class ShiftListViewController: UIViewController, UITableViewDelegate, Shif
         }
     }
     
-
-    func transitToUserSetting(sender: UIBarButtonItem) {
-        performSegueWithIdentifier("ShowUserSetting", sender: self)
-    }
     
     func showErrorAlert(message: String) {
         let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .Alert)
         let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         alertController.addAction(defaultAction)
         presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    
+    func transitToUserSetting(sender: UIBarButtonItem) {
+        performSegueWithIdentifier("ShowUserSetting", sender: self)
     }
     
     
