@@ -115,6 +115,8 @@
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
+                <outlet property="familyNameTextField" destination="t0N-jj-SZg" id="wJL-qR-Det"/>
+                <outlet property="firstNameTextField" destination="pkW-uz-XdU" id="KLm-zR-vT2"/>
                 <outlet property="sendButton" destination="zkp-Do-2yu" id="lv1-E5-Qxy"/>
             </connections>
             <point key="canvasLocation" x="-18" y="460"/>

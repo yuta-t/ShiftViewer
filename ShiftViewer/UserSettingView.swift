@@ -9,6 +9,8 @@
 import UIKit
 
 final class UserSettingView: UIView {
+    @IBOutlet weak var familyNameTextField: FamilyNameTextField!
+    @IBOutlet weak var firstNameTextField: FirstNameTextField!
     @IBOutlet weak var sendButton: SendButton!
     
 }
