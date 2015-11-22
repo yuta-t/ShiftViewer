@@ -10,4 +10,26 @@ import Foundation
 
 final class UserSettingModel: NSObject {
     
+    func validate(familyName familyName: String, firstName: String) -> ValidateResult {
+        switch (familyName.isEmpty, firstName.isEmpty) {
+        case (true, true): return .Failure(message: "Family name and first name is empty")
+        case (true, _): return .Failure(message: "Family name is empty")
+        case (_, true): return .Failure(message: "First name is empty")
+        case (_, _): return .Success
+        }
+    }
+    
+    
+    func save(familyName familyName: String, firstName: String) {
+        let userName = ["familyName": familyName, "firstName": firstName]
+        
+        let defaults = NSUserDefaults()
+        defaults.setObject(userName, forKey: "UserName")
+    }
+}
+
+
+enum ValidateResult {
+    case Success
+    case Failure(message: String)
 }
