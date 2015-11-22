@@ -45,7 +45,7 @@ struct Term {
             throw InitError.Unparsable("id")
         }
         
-        guard let groupId = json["mentor_shift_group_id"].int else {
+        guard let groupId = json["group_id"].int else {
             throw InitError.Unparsable("group id")
         }
         
