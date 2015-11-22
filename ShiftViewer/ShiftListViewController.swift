@@ -26,13 +26,6 @@ final class ShiftListViewController: UIViewController, UITableViewDelegate, Shif
         
         title = "シフト一覧"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        let shiftView = view as! ShiftListView
-        
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "transitToUserSetting:")
         
         model.getTerms {
             dispatch_async(dispatch_get_main_queue(), {
@@ -40,6 +33,7 @@ final class ShiftListViewController: UIViewController, UITableViewDelegate, Shif
             })
         }
     }
+    
     
     
     func showErrorAlert(message: String) {
