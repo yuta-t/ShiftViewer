@@ -30,9 +30,9 @@ final class UserSettingModel: NSObject {
     
     func fetchName() -> (String?, String?) {
         let defaults = NSUserDefaults()
-        let fullName = defaults.objectForKey("UserName") as! [String: String]
-        let familyName = fullName["familyName"]
-        let firstName = fullName["firstName"]
+        let fullName = defaults.objectForKey("UserName") as? [String: String]
+        let familyName = fullName?["familyName"]
+        let firstName = fullName?["firstName"]
         return (familyName, firstName)
     }
 }
