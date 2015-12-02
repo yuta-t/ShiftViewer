@@ -47,7 +47,7 @@ final class UserSettingViewController: UIViewController {
     }
     
     func showCautionAlert(message: String) {
-        let alertController = UIAlertController(title: "Caution", message: message, preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .Alert)
         
         let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         alertController.addAction(defaultAction)
