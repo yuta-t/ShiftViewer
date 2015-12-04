@@ -7,17 +7,8 @@
         <!--Shift List View Controller-->
         <scene sceneID="tdm-Ot-RVU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sbz-LN-ml0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController extendedLayoutIncludesOpaqueBars="YES" id="BgD-fb-x8f" customClass="ShiftListViewController" customModule="ShiftViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TGI-wE-2fe"/>
-                        <viewControllerLayoutGuide type="bottom" id="3qz-WR-tYP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VjE-g6-W2G">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
                     <navigationItem key="navigationItem" id="78g-M5-U4e"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -25,7 +16,6 @@
                         <segue destination="hRJ-EC-qDs" kind="show" identifier="ShowUserSetting" id="Tqx-gd-xfK"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sbz-LN-ml0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676.5" y="151.5"/>
         </scene>
@@ -33,16 +23,6 @@
         <scene sceneID="XKu-E9-1sT">
             <objects>
                 <viewController extendedLayoutIncludesOpaqueBars="YES" id="kcY-lM-UY8" customClass="ShiftViewController" customModule="ShiftViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jEf-rT-WFz"/>
-                        <viewControllerLayoutGuide type="bottom" id="W5w-P5-fWD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="O9u-L0-O5s">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
                     <navigationItem key="navigationItem" id="z3g-4d-ZpG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -54,16 +34,6 @@
         <scene sceneID="DzU-F7-qei">
             <objects>
                 <viewController extendedLayoutIncludesOpaqueBars="YES" id="hRJ-EC-qDs" customClass="UserSettingViewController" customModule="ShiftViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fZ7-MI-foS"/>
-                        <viewControllerLayoutGuide type="bottom" id="gfZ-Qb-zL7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BYn-WG-0gD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
                     <navigationItem key="navigationItem" id="Q4v-1I-nA4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
